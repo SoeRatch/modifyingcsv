@@ -1,0 +1,148 @@
+.grandparent {
+	padding:10px;
+ display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+.par1{
+  display: inline-block;
+  color:white;
+  margin:0;
+  padding: 0;
+}
+
+.par2{
+  display: inline-block;
+  color:white;
+  margin:0;
+  padding: 0;
+  float: right;
+}
+
+
+
+
+
+.plus{
+  position: relative;
+    width: 33px;
+    height: 33px;
+    color: black;
+    background: white;
+    border-radius: 50%;
+    border: none;
+    transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
+
+}
+
+
+.plus:after{
+
+        content: "+";
+
+        font-size: 3.3em;
+        line-height: 0.7em;
+   
+}
+
+.plus:hover{
+   
+        transform: rotate(90deg);
+        box-shadow: 0 0 1px 15px rgba(#8A3B58, 0.4),
+        0 0 1px 30px rgba(#8A3B58, 0.1),
+        0 0 1px 45px rgba(#8A3B58, 0.1);
+    
+}
+
+
+
+.parent {
+  position: relative;
+  border: 1px solid #000;
+  background: #500;
+  width:45vw;
+  margin-bottom:20px;
+}
+
+
+.container {
+  overflow-y: auto;
+  height: 250px;
+}
+table {
+  border-spacing: 0;
+  width:100%;
+}
+
+td + td {
+  border-left:1px solid #eee;
+}
+th + th {
+  border-left:1px solid #eee;
+}
+td {
+  border-bottom:1px solid #eee;
+  background: #ddd;
+  color: #000;
+  padding: 10px 25px;
+}
+th {
+  line-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: transparent;
+  border: none;
+  white-space: nowrap;
+}
+th div{
+  
+  color: #000;
+  top: 0;
+  line-height: 45px;
+  border-left: 1px solid #800;
+
+}
+th:first-child div{
+  border: none;
+}
+
+
+
+
+.parentt {
+  position: relative;
+  border: 1px solid #000;
+  background: #cccc99;
+  width:80vw;
+  margin-bottom:20px;
+}
+
+.containert {
+  overflow-y: auto;
+  height: 450px;
+}
+
+.editbutton {
+  color:black;
+  text-align: center;
+  font-size: 1.8em;
+  border: 1px solid yellow;
+  width:50px;
+  height: 36px;
+  padding: 0;
+  margin: 0;
+}
+
+.inpa {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+  color: #000;
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
